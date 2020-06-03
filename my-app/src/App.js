@@ -1,8 +1,16 @@
-import React from 'react';
+// Dependencies
+import React, { useState } from 'react';
+
+// Images
 import logo from './logo.svg';
+
+// Style
 import './App.css';
 
 function App() {
+  // Local state
+  const [open, setOpen] = useState(false);
+
   return (
     <div className="App">
       <header className="App-header">
