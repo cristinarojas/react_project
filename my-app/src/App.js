@@ -1,3 +1,4 @@
+/*eslint no-unused-vars: "off"*/
 // Dependencies
 import React, { useState } from 'react';
 
@@ -11,21 +12,21 @@ function App() {
   // Local state
   const [open, setOpen] = useState(false);
 
+  // Method to handle onclick
+  const handleClick = () => {
+    alert('clicked!');
+  }
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
+        <span
           className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+          onClick={handleClick}
         >
-          Learn React
-        </a>
+          Click here!
+        </span>
       </header>
     </div>
   );
